@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentes Pedagógicos: Sistematización de experiencias con IA - Revista Anáhuac</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1920&q=80" alt="Artificial Intelligence Abstract" class="hero-bg">
+        <div class="hero-content fade-in-up">
+            <span class="hero-tag">Artículo de Investigación</span>
+            <h1 class="hero-title">Agentes Pedagógicos</h1>
+            <p class="hero-subtitle">Sistematización de experiencias con IA y retos en su implementación educativa</p>
+            <div class="hero-authors">
+                <div class="hero-author"><i class="fas fa-pen-nib"></i> Elia Padilla Aguillon</div>
+                <div class="hero-author"><i class="fas fa-pen-nib"></i> Marcos Sánchez Cerda</div>
+                <div class="hero-author"><i class="fas fa-pen-nib"></i> Josue Salvador Rodríguez Sánchez</div>
+            </div>
+        </div>
+    </header>
+
+    <main class="content">
+
+        <!-- INTRODUCCIÓN -->
+        <section class="content-section fade-in-up">
+            <div class="container">
+                <h2 class="section-title"><span>01.</span> Introducción</h2>
+                <div class="text-container intro-text">
+                    <p class="drop-cap">La integración de la Inteligencia Artificial Generativa (IAG) en la educación superior representa una transición fundamental en los modelos educativos, transformando las prácticas de enseñanza, aprendizaje y evaluación de manera significativa. Si bien la IAG tiene el potencial de ampliar el acceso a contenidos educativos, aumenta los riesgos relacionados con la integridad académica y el pensamiento crítico, ya que permite a los estudiantes generar respuestas que podrían no reflejar una verdadera comprensión del contenido. Los estudios recientes indican que el uso de IAG sin regulaciones adecuadas podría facilitar comportamientos deshonestos y desafiar las normas de honestidad académica, lo que requiere un replanteamiento de las políticas educativas (Al-Zahrani & Alasmari, 2024). Además, la automatización de los productos de aprendizaje sin mediación puede erosionar habilidades cognitivas fundamentales, como la reflexión crítica sobre la información presentada.</p>
+                    
+                    <p>Si las instituciones educativas desean minimizar los riesgos sin prohibir el uso de IAG en su práctica educativa, es fundamental repensar la mediación instruccional de estas tecnologías para evitar el uso indebido de estas herramientas (Chiu, 2023). La creación de GPTs personalizados es una oportunidad real para mediar la tecnología con bajo riesgo, al estar entrenados en conjuntos de datos específicos y diseñados para cumplir objetivos pedagógicos claros (Lo, 2023). Los GPTs personalizados permiten limitar la generación de contenidos erróneos o manipulativos, comportamientos indebidos del estudiante y del propio agente, diseñar un rol específico para el agente o para el estudiante y delimitar las condiciones de inicio, desarrollo o finalización de las interacciones.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FUNDAMENTO TEÓRICO -->
+        <section class="content-section fade-in-up">
+            <div class="container">
+                <h2 class="section-title"><span>02.</span> Fundamento Teórico</h2>
+                
+                <div class="theory-grid">
+                    <div class="theory-text">
+                        <p>Es importante distinguir entre un chatbot y un agente personalizado. A diferencia de un chat convencional, que ofrece respuestas a cualquier pregunta o productos a cualquier tarea, un agente de IA, como un GPT personalizado o <em>custom GPT</em>, está diseñado para operar como un entorno controlado, configurado para lograr fines particulares y ofrecer valor práctico (López-Galisteo & Borrás-Gené, 2025) e incluso dotado de una identidad previamente definida. Estos agentes no solo responden, sino que ejecutan instrucciones predefinidas y asumen roles específicos, lo que plantea la necesidad de guías estandarizadas que orienten a los docentes en su desarrollo y adopción responsable.</p>
+                        
+                        <p>Los agentes de IA permiten integrar conocimiento externo e interno en los modelos de lenguaje, lo que asegura respuestas más precisas y contextualmente relevantes (Córdova-Esparza, 2025). Esta capacidad de recuperar información, por ejemplo, de materiales de aprendizaje de un curso, mejora la confiabilidad y reduce errores. Además, permiten establecer roles dinámicos, como el de tutor o evaluador, que modelan el tono y enfoque según el propósito del agente (Gold & Geng, 2024; Córdova-Esparza, 2025).</p>
+                        
+                        <p>Desde el diseño, un agente debe basarse en modelos pedagógicos sólidos para garantizar su eficacia. Huang y Willems (2025) y Yusuf et al. (2025) enfatizan que la IA no debe ser vista solo como una herramienta tecnológica, sino como un componente activo dentro de estrategias de aprendizaje que fomenten la interacción y el aprendizaje significativo. De este modo, los agentes deben traducir modelos pedagógicos en interacciones estructuradas (Lin et al., 2026), apoyando a los estudiantes mediante andamiaje pedagógico, lo que permite una mejor comprensión de tareas complejas sin sobrecargar cognitivamente al alumno.</p>
+                        
+                        <p>La evidencia empírica apoya este enfoque. Lin et al. (2026) demostraron que el "Coach GenAI", basado en el modelo pedagógico de las 5E, generó mejoras sustanciales en el aprendizaje, mientras que Liu y Ma (2025) señalaron que los GPTs personalizados favorecen la adquisición de conocimientos complejos a través de apoyo en tiempo real. Este andamiaje se concreta en apoyo lingüístico, metalingüístico y cognitivo, a través de herramientas como la retroalimentación, la instrucción y el cuestionamiento guiado (Liu & Ma, 2025).</p>
+                        
+                        <p>Además, los agentes de IA personalizados ofrecen experiencias de aprendizaje más personalizadas, aumentando el control del estudiante sobre su proceso de aprendizaje y fomentando emociones positivas (Li et al., 2025). Esta personalización también permite una transición más fluida desde la incertidumbre a entornos controlados, donde los estudiantes dejan de ser receptores pasivos de contenido para convertirse en co-creadores de su aprendizaje.</p>
+                    </div>
+                    
+                    <div class="theory-aside">
+                        <div class="pull-quote fade-in-up">
+                            <p>La IA no debe ser vista solo como una herramienta tecnológica, sino como un componente activo dentro de estrategias de aprendizaje que fomenten la interacción y el aprendizaje significativo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- METODOLOGÍA -->
+        <section class="metodologia fade-in-up">
+            <div class="container text-container">
+                <h2 class="section-title"><span>03.</span> Metodología</h2>
+                <p>Seis agentes de IA fueron implementados en Anáhuac Online, una institución de educación superior en línea, abarcando diversas disciplinas académicas y grados. Estos agentes tienen como objetivo principal mejorar el aprendizaje activo y formativo de los estudiantes, adaptándose a las necesidades específicas de cada curso. Por esta razón los denominamos “agentes pedagógicos”: los agentes fueron diseñados para promover, complementar, evaluar o garantizar los objetivos de aprendizaje de los cursos intervenidos.</p>
+                <p>En este proceso, fue crucial identificar los problemas de desarrollo y reconocer sus implicaciones pedagógicas y tecnológicas. La importancia de reconocer las limitaciones tecnológicas y pedagógicas de los agentes reside en la capacidad de resolverlas de manera eficiente, optimizando el rendimiento y la utilidad del agente como herramienta educativa. El análisis de los desafíos, tales como las restricciones tecnológicas o las necesidades de mediación instruccional, permitió ajustar los agentes para que respondieran mejor a las necesidades de los estudiantes, favoreciendo la experiencia de aprendizaje esperada. La resolución de estas problemáticas no solo mejoró la implementación en el contexto específico, sino que también proporciona valiosas lecciones para futuras implementaciones en universidades y plataformas educativas similares, demostrando que la adaptación continua y la reflexión sobre los problemas es clave para el éxito de los agentes pedagógicos en ambientes educativos.</p>
+            </div>
+        </section>
+
+        <!-- SISTEMATIZACIÓN DE EXPERIENCIAS -->
+        <section class="content-section">
+            <div class="container text-container" style="max-width: 1000px; text-align: center; margin-bottom: 4rem;">
+                <h2 class="section-title" style="border-top: none;"><span>04.</span> Sistematización de experiencias</h2>
+            </div>
+            
+            <div class="container agentes-container">
+                
+                <!-- Agente 1 -->
+                <article class="agente-card fade-in-up">
+                    <div class="agente-header">
+                        <div class="agente-image-container">
+                            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80" alt="Examen Diagnóstico">
+                        </div>
+                        <span class="agente-numero">Agente 01</span>
+                        <h3 class="agente-title">Examen Diagnóstico Adaptativo</h3>
+                        <p class="agente-desc">Este agente pedagógico fue diseñado para evaluar las habilidades fundamentales de programación de los estudiantes utilizando un enfoque adaptativo basado en la Taxonomía de Bloom. Su propósito es proporcionar una evaluación dinámica que se ajusta al nivel de competencia del alumno, aumentando la dificultad de las preguntas a medida que el estudiante responde correctamente, o manteniéndola en el mismo nivel si las respuestas son incorrectas. La función principal del agente es adaptar el examen para cada estudiante, asegurando que reciba una evaluación justa y personalizada, mientras recibe retroalimentación inmediata para optimizar su aprendizaje. Este examen está diseñado para cubrir cuatro niveles de dificultad, desde los conceptos básicos de programación hasta problemas más complejos que requieren análisis y optimización de código.</p>
+                        
+                        <a href="https://chatgpt.com/g/g-69ac46a0ca988191a8b8df7e56070150-examen-diagnostico-adaptativo" target="_blank" rel="noopener noreferrer" class="btn-agente">
+                            <i class="fas fa-external-link-alt"></i> Probar Agente
+                        </a>
+                    </div>
+                    
+                    <div class="agente-body">
+                        <div class="problemas-container">
+                            <h4 style="margin-bottom: 1.5rem; color: var(--color-brand); font-family: var(--font-sans);">1) Problemas de desarrollo e implementación</h4>
+                            
+                            <!-- P1 -->
+                            <div class="problema-solucion">
+                                <div class="ps-item ps-problema">
+                                    <span class="ps-label"><i class="fas fa-times-circle"></i> Problema 1</span>
+                                    <h5 class="ps-title">Dificultad para comprender la experiencia y las expectativas depositadas en el alumno.</h5>
+                                    <p class="ps-text">La primera versión del exámen iniciaba al dar clic en el botón “comenzar” sin instrucciones previas. Por tanto, los estudiantes no entendían completamente cómo interactuar con el sistema de examen adaptativo. Las preguntas iniciales no solo eran parte de la evaluación, sino que los estudiantes se sentían confundidos por la interfaz y el formato de las respuestas esperadas, lo que podía afectar sus respuestas. Algunos estudiantes no sabían si debían responder con la letra de la opción o si debían escribir la respuesta completa. Esto causaba errores en la interpretación de las respuestas y, en algunos casos, el sistema no las consideraba correctas.</p>
+                                </div>
+                                <div class="ps-item ps-solucion">
+                                    <span class="ps-label"><i class="fas fa-check-circle"></i> Solución 1</span>
+                                    <h5 class="ps-title">Onboarding</h5>
+                                    <p class="ps-text">Se diseñó una bienvenida al examen que contempla una descripción completa del mismo. Además, se añadió una pregunta de prueba al inicio de la evaluación, la cual no cuenta para la calificación final pero ayuda a los estudiantes a familiarizarse con la plataforma y el formato de las preguntas. Esta solución permite que los estudiantes comprendan el flujo del examen antes de comenzar el proceso de evaluación real.</p>
+                                </div>
+                            </div>
+
+                            <!-- P2 -->
+                            <div class="problema-solucion">
+                                <div class="ps-item ps-problema">
+                                    <span class="ps-label"><i class="fas fa-times-circle"></i> Problema 2</span>
+                                    <h5 class="ps-title">Falta de Precisión en la Adaptación de Dificultad</h5>
+                                    <p class="ps-text">El sistema de adaptación de las preguntas no ajustaba con precisión el nivel de dificultad, lo que causaba que algunos estudiantes enfrentaran preguntas que no correspondían a su nivel, lo que afectaba tanto su motivación como el resultado del examen.</p>
+                                </div>
+                                <div class="ps-item ps-solucion">
+                                    <span class="ps-label"><i class="fas fa-check-circle"></i> Solución 2</span>
+                                    <h5 class="ps-title">Definición de niveles de dificultad y reactivos Ejemplo</h5>
+                                    <p class="ps-text">Se definieron los niveles de dificultad por tema y se crearon ejemplos de reactivos alineados a cada nivel, lo que enriqueció el conocimiento del sistema y mejoró la adaptación a cada estudiante. Esta solución permitió que las preguntas fueran más relevantes y ajustadas a</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="aprendizajes">
+                            <h4><i class="fas fa-lightbulb"></i> 2) Aprendizajes clave</h4>
+                            <p>Un aprendizaje clave de esta experiencia fue que el diseño del flujo del examen debe ser considerado como un guión detallado. Es decir, debe planificarse cuidadosamente qué pasa al principio, cómo se desarrollan las interacciones durante el proceso y qué sucede al final. En este caso, la pregunta de prueba inicial fue crucial para asegurar que el alumno comprendiera cómo interactuar con el sistema antes de comenzar el examen real. Además, el ajuste dinámico de la dificultad a lo largo del examen, combinado con la retroalimentación inmediata, permite que el alumno reciba un desafío adecuado a su nivel de conocimiento, lo que mejora la precisión de la evaluación y reduce la frustración.</p>
+                            <p>Un punto importante fue que la claridad del proceso y las instrucciones claras sobre el formato de las respuestas fueron esenciales para garantizar que el alumno no cometiera errores debido a malentendidos. Este tipo de diseño de la experiencia es fundamental no solo en exámenes diagnósticos, sino en cualquier proceso educativo donde la mediación pedagógica sea clave para el éxito del alumno.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Agente 2 -->
+                <article class="agente-card fade-in-up">
+                    <div class="agente-header">
+                        <div class="agente-image-container">
+                            <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80" alt="Mayito">
+                        </div>
+                        <span class="agente-numero">Agente 02</span>
+                        <h3 class="agente-title">Mayito</h3>
+                        <p class="agente-desc">Mayito es un agente dialógico diseñado para ser provocador, curioso y desafiante. A diferencia de otros agentes que proporcionan respuestas claras o tareas útiles, Mayito cuestiona constantemente, invitando al usuario a pensar de manera crítica sobre sus propias creencias y suposiciones. No resuelve problemas ni ofrece respuestas definitivas. Su propósito principal es provocar dudas, cuestionar certezas y, de ser posible, ayudar a los usuarios a parir ideas nuevas a través de un diálogo socrático. Mayito se define por su personalidad irónica y su enfoque mayéutico, que lo convierte en un agente pedagógico único “como si Sócrates fuera millenial”.<br><br>Este agente se diseñó para analizar y deconstruir las creencias del usuario, sin dar respuestas claras. El objetivo es molestar certezas, explorar nuevas perspectivas y fomentar el pensamiento crítico, especialmente en áreas como filosofía, economía, psicología o temas existenciales.</p>
+                        
+                        <a href="https://chatgpt.com/g/g-68fa4250c2c481918ed6df5e4e4c6e22-mayito" target="_blank" rel="noopener noreferrer" class="btn-agente">
+                            <i class="fas fa-external-link-alt"></i> Probar Agente
+                        </a>
+                    </div>
+                    
+                    <div class="agente-body">
+                        <div class="problemas-container">
+                            <h4 style="margin-bottom: 1.5rem; color: var(--color-brand); font-family: var(--font-sans);">1) Problemas de desarrollo e implementación</h4>
+                            
+                            <!-- P1 -->
+                            <div class="problema-solucion">
+                                <div class="ps-item ps-problema">
+                                    <span class="ps-label"><i class="fas fa-times-circle"></i> Problema 1</span>
+                                    <h5 class="ps-title">La IA no es capaz de cuestionar el sentido de las temáticas</h5>
+                                    <p class="ps-text">Uno de los primeros problemas fue que, aunque Mayito tenía la personalidad para cuestionar todo, no cuestionaba el sentido de la temática en sí misma. Por ejemplo, si el usuario hablaba sobre stocks o el mercado financiero, Mayito comenzaba a analizar el mercado como tal, pero no cuestionaba el fin último de este: ¿es el mercado una forma válida de estructurar la economía? ¿Por qué la búsqueda de dinero es tan relevante? Esta falta de cuestionamiento de las bases existenciales o filosóficas de los temas hacía que Mayito se alineara demasiado con la lógica de la temática propuesta.</p>
+                                </div>
+                                <div class="ps-item ps-solucion">
+                                    <span class="ps-label"><i class="fas fa-check-circle"></i> Solución 1</span>
+                                    <h5 class="ps-title">Definir límites de cuestionamiento</h5>
+                                    <p class="ps-text">Se definieron límites explícitos en el flujo de las conversaciones para asegurarse de que Mayito no solo cuestionara el contenido superficial, sino que también lo hiciera en un nivel más profundo, cuestionando las premisas filosóficas detrás de los temas, especialmente en áreas como la ética, la economía y el sentido de las creencias del usuario. Ahora, Mayito puede intervenir más en la base existencial de los temas, cuestionando su relevancia.</p>
+                                </div>
+                            </div>
+
+                            <!-- P2 -->
+                            <div class="problema-solucion">
+                                <div class="ps-item ps-problema">
+                                    <span class="ps-label"><i class="fas fa-times-circle"></i> Problema 2</span>
+                                    <h5 class="ps-title">Desviación sentimental y rol indeseable de psicólogo</h5>
+                                    <p class="ps-text">Otro problema se presentó cuando Mayito comenzó a entrar demasiado en temas personales de los usuarios. En lugar de mantener una reflexión filosófica general, Mayito, debido a su estilo empático, tendía a identificar y abordar emociones personales del usuario, lo que podría hacer que se desviara hacia un comportamiento similar al de un psicólogo, aunque sin la formación adecuada y dentro de límites éticos poco claros.</p>
+                                </div>
+                                <div class="ps-item ps-solucion">
+                                    <span class="ps-label"><i class="fas fa-check-circle"></i> Solución 2</span>
+                                    <h5 class="ps-title">Establecer límites claros en el rol de Mayito</h5>
+                                    <p class="ps-text">Para evitar que Mayito se desbordara y asumiera el rol de terapeuta o psicólogo, se implementaron límites claros en su programación. Mayito ahora tiene instrucciones explícitas para no profundizar demasiado en temas emocionales personales, sino para elevar esas emociones a un contexto filosófico más amplio y humano. Esto mantiene el enfoque en el diálogo filosófico y evita que Mayito se convierta en un consejero emocional.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="aprendizajes">
+                            <h4><i class="fas fa-lightbulb"></i> 2) Aprendizajes clave</h4>
+                            <p>A partir de esta experiencia, aprendimos que al crear agentes pedagógicos críticos o filosóficos, es fundamental reconocer que la IA tiene límites en la búsqueda de sentido. Se recomienda establecer límites de interacción para evitar que el agente se convierta en un psicólogo, manteniendo siempre el enfoque en las ideas y cuestionamientos. Además, los escenarios del usuario deben ser mapeados cuidadosamente para permitir que el agente se mantenga en un nivel filosófico sin perderse en lo personal. Mayito, como agente dialógico, provocó importantes reflexiones sobre cómo un agente puede cuestionar la realidad de manera ética y productiva sin desbordar los límites del rol asignado.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Agente 3 -->
+                <article class="agente-card fade-in-up">
+                    <div class="agente-header">
+                        <div class="agente-image-container">
+                            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="Simulador de seguros">
+                        </div>
+                        <span class="agente-numero">Agente 03</span>
+                        <h3 class="agente-title">Simulador de seguros</h3>
+                        <p class="agente-desc">Este agente pedagógico fue diseñado para simular un cliente al que los estudiantes deben vender un seguro, adaptado a diferentes tipos, en un contexto mexicano. El propósito principal del agente es ofrecer una experiencia realista de ventas, en la que los estudiantes deben demostrar habilidades de persuasión, negociación y toma de decisiones mientras interactúan con el cliente. Además, el agente tiene un doble rol: actúa como cliente en la simulación y como evaluador oculto, que sigue y evalúa la interacción del estudiante, centrándose en sus competencias metacognitivas a lo largo de la conversación y al finalizar la simulación a través de un resumen de desempeño.<br><br>El sistema se enfrenta a varios retos éticos, como evitar que el alumno manipule al cliente, y problemas tecnológicos, como la necesidad de ajustar las respuestas del agente para mantener la realidad del escenario. El agente está entrenado con materiales del curso y bases de datos reales, como la ENIF 2021, lo que le permite ser un reflejo fiel de la realidad mexicana en cuanto a clientes y escenarios financieros.</p>
+                        
+                        <a href="https://gemini.google.com/gem/1E3hLTsgM4hj7YzWSIgTALP2rWBLH82P3?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-agente">
+                            <i class="fas fa-external-link-alt"></i> Probar Agente
+                        </a>
+                    </div>
+                    
+                    <div class="agente-body">
+                        <div class="problemas-container">
+                            <h4 style="margin-bottom: 1.5rem; color: var(--color-brand); font-family: var(--font-sans);">1) Problemas de desarrollo e implementación</h4>
+                            
+                            <!-- P1 -->
+                            <div class="problema-solucion">
+                                <div class="ps-item ps-problema">
+                                    <span class="ps-label"><i class="fas fa-times-circle"></i> Problema 1</span>
+                                    <h5 class="ps-title">Riesgo de manipulación del cliente o comportamiento indebido</h5>
+                                    <p class="ps-text">El primer desafío fue que los estudiantes podían manipular al cliente, utilizar lenguaje grosero o incluso amenazar al cliente para lograr una venta. Esto comprometía la ética de la simulación y no reflejaba un comportamiento profesional adecuado.</p>
+                                </div>
+                                <div class="ps-item ps-solucion">
+                                    <span class="ps-label"><i class="fas fa-check-circle"></i> Solución 1</span>
+                                    <h5 class="ps-title">Definición de límites éticos en el agente</h5>
+                                    <p class="ps-text">Se establecieron instrucciones claras sobre qué tipo de comportamiento era aceptable y qué debía ser considerado “grosero” o manipulador. Si el agente detectaba un comportamiento inapropiado, terminaba la simulación y alertaba al estudiante sobre los límites éticos. Esto no solo ayudó a mantener la simulación ética, sino que también sirvió como una lección sobre comunicación responsable en el contexto profesional.</p>
+                                </div>
+                            </div>
+
+                            <!-- P2 -->
+                            <div class="problema-solucion">
+                                <div class="ps-item ps-problema">
+                                    <span class="ps-label"><i class="fas fa-times-circle"></i> Problema 2</span>
+                                    <h5 class="ps-title">Escenarios poco realistas</h5>
+                                    <p class="ps-text">Uno de los problemas detectados fue que el agente generaba alucinaciones o escenarios poco realistas durante las simulaciones. Es decir, el agente podía generar respuestas o escenarios de cliente que no correspondían a una situación de ventas de seguro realista, afectando la autenticidad de la simulación.</p>
+                                </div>
+                                <div class="ps-item ps-solucion">
+                                    <span class="ps-label"><i class="fas fa-check-circle"></i> Solución 2</span>
+                                    <h5 class="ps-title">Integración de datos reales</h5>
+                                    <p class="ps-text">Para corregir esto, se entrenó al agente utilizando bases de datos reales, como la ENIF 2021, lo que permitió que las respuestas del agente estuvieran basadas en perfiles y escenarios de clientes auténticos. Esto mejoró la coherencia y realismo de la simulación, asegurando que los estudiantes interactuaran con un cliente más representativo del mercado mexicano.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- P3 -->
+                            <div class="problema-solucion">
+                                <div class="ps-item ps-problema">
+                                    <span class="ps-label"><i class="fas fa-times-circle"></i> Problema 3</span>
+                                    <h5 class="ps-title">El Cliente no detecta respuestas incorrectas o inventadas por el estudiante</h5>
+                                    <p class="ps-text">Otro problema surgió cuando los estudiantes inventaban cálculos o proporcionaban respuestas incorrectas sobre los beneficios o cálculos de un seguro. Dado que el cliente no podía detectar estos errores o la invención de cifras, el estudiante a veces obtenía una respuesta “correcta” solo porque sonaba plausible.</p>
+                                </div>
+                                <div class="ps-item ps-solucion">
+                                    <span class="ps-label"><i class="fas fa-check-circle"></i> Solución 3</span>
+                                    <h5 class="ps-title">Validación de contenido por el agente con materiales del curso</h5>
+                                    <p class="ps-text">Para abordar este problema, se entrenó al agente con materiales específicos del curso en formato markdown, lo que le permitió validar el contenido que el estudiante proporcionaba. El agente, al estar entrenado con información verificada, podía detectar si el estudiante proporcionaba un cálculo incorrecto o inventado, y asegurar que las respuestas fueran realistas y basadas en los principios del curso. Esto no solo evitó respuestas erróneas, sino que también permitió una evaluación más precisa del conocimiento del estudiante.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="aprendizajes">
+                            <h4><i class="fas fa-lightbulb"></i> 2) Aprendizajes clave</h4>
+                            <p>Un aprendizaje importante de esta experiencia fue que no solo debemos diseñar la experiencia que queremos que el alumno tenga, sino también prever las experiencias que no queremos. En este caso, se hizo necesario pensar en el “usuario más problemático”: el estudiante que intenta manipular el sistema, el que busca respuestas fáciles, o el que no sigue los principios éticos de la simulación. Este enfoque permitió diseñar un agente que no solo apoya el aprendizaje de ventas y toma de decisiones, sino que también establece límites éticos claros, evitando que los estudiantes se desvíen hacia comportamientos indeseables.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Agente 4 -->
+                <article class="agente-card fade-in-up">
+                    <div class="agente-header">
+                        <div class="agente-image-container">
+                            <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80" alt="Arcana cognitiva">
+                        </div>
+                        <span class="agente-numero">Agente 04</span>
+                        <h3 class="agente-title">Arcana cognitiva</h3>
+                        <p class="agente-desc">Este agente pedagógico está diseñado para promover habilidades de argumentación en los estudiantes, a través de misiones basadas en los ocho pilares de la argumentación. Cada misión plantea un caso o reto que el estudiante debe resolver, acumulando puntos en función de su desempeño. El juego está ambientado en un entorno 2D, con un mago guía que introduce las misiones al estudiante y lo dirige al entorno del GPT personalizado donde comienza el juego. La estructura del agente está pensada para ser una herramienta evaluativa formativa, pero al mismo tiempo, busca mantener el interés del estudiante mediante la gamificación.</p>
+                        
+                        <a href="https://chatgpt.com/g/g-6912778293ac81919be237ef42e3655c-arcana-cognitiva" target="_blank" rel="noopener noreferrer" class="btn-agente">
+                            <i class="fas fa-external-link-alt"></i> Probar Agente
+                        </a>
+                    </div>
+                    
+                    <div class="agente-body">
+                        <div class="problemas-container">
+                            <h4 style="margin-bottom: 1.5rem; color: var(--color-brand); font-family: var(--font-sans);">1) Problemas de desarrollo e implementación</h4>
+                            
+                            <!-- P1 -->
+                            <div class="problema-solucion">
+                                <div class="ps-item ps-problema">
+                                    <span class="ps-label"><i class="fas fa-times-circle"></i> Problema 1</span>
+                                    <h5 class="ps-title">Retroalimentación larga y difícil de procesar</h5>
+                                    <p class="ps-text">Al principio, la retroalimentación proporcionada por el agente era demasiado larga y narrativa. Las explicaciones de tres párrafos resultaban agotadoras de leer, lo que disminuía el interés del alumno y creaba una carga cognitiva innecesaria.</p>
+                                </div>
+                                <div class="ps-item ps-solucion">
+                                    <span class="ps-label"><i class="fas fa-check-circle"></i> Solución 1</span>
+                                    <h5 class="ps-title">Retroalimentación más ligera y directa</h5>
+                                    <p class="ps-text">Se ajustó el formato de la retroalimentación, reduciendo la longitud de texts y simplificando las explicaciones para que fueran más claras y fáciles de procesar. Ahora, la retroalimentación es más concisa y directa, lo que permite a los estudiantes comprender rápidamente qué hicieron bien y qué podrían mejorar, sin sentirse abrumados.</p>
+                                </div>
+                            </div>
+
+                            <!-- P2 -->
+                            <div class="problema-solucion">
+                                <div class="ps-item ps-problema">
+                                    <span class="ps-label"><i class="fas fa-times-circle"></i> Problema 2</span>
+                                    <h5 class="ps-title">Múltiples escenarios complicaba la experiencia</h5>
+                                    <p class="ps-text">En el diseño inicial, las misiones estaban conectadas a un mismo caso, lo que generaba una dificultad para los estudiantes a la hora de recordar todos los elementos previos para resolver la misión siguiente. Esto causaba confusión y desmotivación, ya que los estudiantes no lograban seguir el hilo conductor del juego.</p>
+                                </div>
+                                <div class="ps-item ps-solucion">
+                                    <span class="ps-label"><i class="fas fa-check-circle"></i> Solución 2</span>
+                                    <h5 class="ps-title">Casos independientes</h5>
+                                    <p class="ps-text">Se optó por independizar cada misión, de modo que cada pilar de la argumentación fuera tratado de manera aislada, sin necesidad de recordar información de misiones anteriores. Esto facilitó el seguimiento del juego y permitió que los estudiantes pudieran centrarse completamente en cada misión sin distracciones o sobrecarga cognitiva.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="aprendizajes">
+                            <h4><i class="fas fa-lightbulb"></i> 2) Aprendizajes clave</h4>
+                            <p>Es esencial que las instrucciones del sistema sean lo más claras posibles, y no solo en cuanto a la identidad del agente o las reglas de comportamiento, sino también sobre el tono y el formato de la retroalimentación. Si el tono y el formato no están bien definidos en el prompt del sistema, el agente puede no cumplir con las expectativas del usuario ni mantener una experiencia consistente durante toda la interacción. Esto es crucial, especialmente cuando el agente tiene una personalidad definida y debe seguir un formato estructurado para las respuestas que ofrezca.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Agente 5 -->
+                <article class="agente-card fade-in-up">
+                    <div class="agente-header">
+                        <div class="agente-image-container">
+                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80" alt="Consultor Industrial">
+                        </div>
+                        <span class="agente-numero">Agente 05</span>
+                        <h3 class="agente-title">Consultor</h3>
+                        <p class="agente-desc">Este agente pedagógico actúa como un consultor personalizado en el ámbito del diseño industrial, guiando a los estudiantes a través de las diversas fases de su proyecto. Su propósito es acompañar al estudiante en cada etapa del proyecto, ayudándolo a organizar y estructurar su trabajo de acuerdo con los estándares de la disciplina. El agente no solo ofrece asesoría técnica, sino que también genera checklists personalizados en formato Excel para ayudar al alumno a seguir el progreso de su proyecto. De esta manera, el agente se convierte en una herramienta útil para organizar las tareas, facilitando la planificación y ejecución de cada fase del diseño.<br><br>El problema general que motivó la creación de este agente fue la necesidad de un acompañamiento constante y una estructura clara durante todo el proceso de diseño en un entorno completamente virtual.</p>
+                        
+                        <a href="https://chatgpt.com/g/g-68dc7c2a2e048191af318022d5a7e195-john-dewey-pm" target="_blank" rel="noopener noreferrer" class="btn-agente">
+                            <i class="fas fa-external-link-alt"></i> Probar Agente
+                        </a>
+                    </div>
+                    
+                    <div class="agente-body">
+                        <div class="problemas-container">
+                            <h4 style="margin-bottom: 1.5rem; color: var(--color-brand); font-family: var(--font-sans);">1) Problemas de desarrollo e implementación</h4>
+                            
+                            <!-- P1 -->
+                            <div class="problema-solucion">
+                                <div class="ps-item ps-problema">
+                                    <span class="ps-label"><i class="fas fa-times-circle"></i> Problema 1</span>
+                                    <h5 class="ps-title">Imposibilidad de cargar archivos largos como un libro PDF</h5>
+                                    <p class="ps-text">Uno de los problemas iniciales fue que el agente debía tener acceso a un contenido extenso, como un libro sobre diseño industrial, para poder ofrecer asesoría precisa. Sin embargo, los archivos PDF largos resultaban difíciles de procesar por parte del sistema, lo que impedía que el agente pudiera leer y contextualizar toda la información relevante a medida que el alumno interactuaba con él.</p>
+                                </div>
+                                <div class="ps-item ps-solucion">
+                                    <span class="ps-label"><i class="fas fa-check-circle"></i> Solución 1</span>
+                                    <h5 class="ps-title">Conversión de los contenidos a formato Markdown</h5>
+                                    <p class="ps-text">Para solucionar este problema, se decidió convertir los capítulos del libro en archivos Markdown. Esto permitió que el agente tuviera acceso rápido a secciones específicas del contenido y pudiera referirse a información relevante de manera eficiente sin tener que procesar archivos demasiado largos.</p>
+                                </div>
+                            </div>
+
+                            <!-- P2 -->
+                            <div class="problema-solucion">
+                                <div class="ps-item ps-problema">
+                                    <span class="ps-label"><i class="fas fa-times-circle"></i> Problema 2</span>
+                                    <h5 class="ps-title">Falta de compromiso del alumno con el agente consultor</h5>
+                                    <p class="ps-text">El principal desafío pedagógico era que los estudiantes no parecían comprometerse con el agente o aprovechar al máximo su potencial como consultor. El agente debía ser percibido como una herramienta útil y relevante para el avance del proyecto, pero muchos estudiantes lo usaban de forma pasiva y no tomaban en serio las recomendaciones o los checklists generados.</p>
+                                </div>
+                                <div class="ps-item ps-solucion">
+                                    <span class="ps-label"><i class="fas fa-check-circle"></i> Solución 2</span>
+                                    <h5 class="ps-title">Inclusión de checklists y tareas específicas para mantener el compromiso</h5>
+                                    <p class="ps-text">Para fomentar el compromiso activo del estudiante, se diseñó un sistema donde el agente generaba checklists específicos y personalizados con tareas claras basadas en la fase actual del proyecto. Este formato estructurado no solo mantenía al estudiante enfocado, sino que también le permitía ver su avance a medida que completaba las tareas del proyecto. Esto ayudó a los estudiantes a visualizar su progreso y a sentirse más comprometidos con su trabajo.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="aprendizajes">
+                            <h4><i class="fas fa-lightbulb"></i> 2) Aprendizajes clave</h4>
+                            <p>Un aprendizaje fundamental de esta experiencia fue que los agentes pedagógicos no solo deben ser herramientas de evaluación o asesoría puntual, sino que deben estar integrados en el proceso didáctico de manera continua y sostenida, como lo haría un docente que propone una metodología activa. Este enfoque permite que los estudiantes reciban orientación a lo largo de todo su proyecto, manteniéndolos enfocados y comprometidos en cada fase.</p>
+                            <p>Además, se aprendió que la flexibilidad del agente para ajustarse a las necesidades específicas de cada estudiante y proyecto es clave para su efectividad. Los checklists personalizados y las tareas estructuradas permitieron que los estudiantes tuvieran una guía clara de lo que debían hacer, lo que mejoró la organización y el rendimiento.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Agente 6 -->
+                <article class="agente-card fade-in-up">
+                    <div class="agente-header">
+                        <div class="agente-image-container">
+                            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80" alt="Reclutador PM">
+                        </div>
+                        <span class="agente-numero">Agente 06</span>
+                        <h3 class="agente-title">Reclutador PM</h3>
+                        <p class="agente-desc">Este agente pedagógico fue diseñado para simular una entrevista de reclutamiento para una vacante de Project Management. El objetivo principal de este agente es ayudar al alumno a prepararse para entrevistas laborales, evaluando tanto sus competencias técnicas como las soft skills que son esenciales en este tipo de procesos. A través de una conversación a viva voz, el agente simula un escenario de entrevista profesional, donde evalúa aspectos como la seguridad, confianza y calor de la conversación, además de verificar los conocimientos y habilidades relacionadas con el área de gestión de proyectos.</p>
+                        
+                        <a href="https://gemini.google.com/gem/881ad099a0ba" target="_blank" rel="noopener noreferrer" class="btn-agente">
+                            <i class="fas fa-external-link-alt"></i> Probar Agente
+                        </a>
+                    </div>
+                    
+                    <div class="agente-body">
+                        <div class="problemas-container">
+                            <h4 style="margin-bottom: 1.5rem; color: var(--color-brand); font-family: var(--font-sans);">1) Problemas de desarrollo e implementación</h4>
+                            
+                            <!-- P1 -->
+                            <div class="problema-solucion">
+                                <div class="ps-item ps-problema">
+                                    <span class="ps-label"><i class="fas fa-times-circle"></i> Problema 1</span>
+                                    <h5 class="ps-title">Limitación para utilizar la función de voz en vivo</h5>
+                                    <p class="ps-text">El agente inicialmente enfrentó un problema técnico relacionado con la integración de Gemini Live para la interacción en voz. El modelo no estaba preparado para trabajar con voz en vivo, lo que limitaba su capacidad para realizar una simulación completamente realista.</p>
+                                </div>
+                                <div class="ps-item ps-solucion">
+                                    <span class="ps-label"><i class="fas fa-check-circle"></i> Solución 1</span>
+                                    <h5 class="ps-title">Desarrollo de una API personalizada para integrar Gemini Live</h5>
+                                    <p class="ps-text">Para solucionar este problema, se construyó un programa personalizado que hacía la llamada a las herramientas de modelo de lenguaje de Gemini y las funciones de voz en vivo a través de una API personalizada. Esto permitió integrar la interacción en vivo sin depender de Gemini Live directamente, haciendo posible la simulación de una entrevista completa.</p>
+                                </div>
+                            </div>
+
+                            <!-- P2 -->
+                            <div class="problema-solucion">
+                                <div class="ps-item ps-problema">
+                                    <span class="ps-label"><i class="fas fa-times-circle"></i> Problema 2</span>
+                                    <h5 class="ps-title">Evaluación de soft skills y tono de la conversación</h5>
+                                    <p class="ps-text">Inicialmente, el agente sólo evaluaba las competencias técnicas del alumno, sin tener en cuenta factores importantes como seguridad, confianza o el tono de voz durante la entrevista, que son cruciales en la evaluación de un candidato en una entrevista real.</p>
+                                </div>
+                                <div class="ps-item ps-solucion">
+                                    <span class="ps-label"><i class="fas fa-check-circle"></i> Solución 2</span>
+                                    <h5 class="ps-title">Inclusión de evaluación de soft skills en la retroalimentación</h5>
+                                    <p class="ps-text">El sistema fue ajustado para incorporar una evaluación completa de las soft skills. Ahora, el agente analiza el tono de la voz, la seguridad en las respuestas y el fluido de la conversación, además de las competencias técnicas. El agente también es capaz de proporcionar retroalimentación detallada sobre estas áreas, informando al estudiante sobre su desempeño en aspectos clave de la comunicación interpersonal.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="aprendizajes">
+                            <h4><i class="fas fa-lightbulb"></i> 2) Aprendizajes clave</h4>
+                            <p>Este agente de simulación ha demostrado ser una herramienta efectiva para preparar a los estudiantes para entrevistas de trabajo, no sólo en términos de conocimientos técnicos, sino también en cuanto a habilidades blandas. La integración de voz en vivo y la evaluación continua del tono de la conversación permitió crear una experiencia de entrevista más realista y dinámica. Se recomienda que futuras implementaciones sigan el enfoque de evaluación integral, incorporando tanto los aspectos técnicos como las soft skills, para ofrecer una preparación más completa para el mundo laboral. Además, el uso de APIs y otras herramientas externas demuestra que los agentes pedagógicos, para ser efectivos en evaluaciones complejas, deben ser robustecidos tecnológicamente, lo que permitirá expandir sus capacidades y adaptarlos a una amplia gama de aplicaciones educativas.</p>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- CONCLUSIONES -->
+        <section class="content-section fade-in-up" style="padding-bottom: 2rem;">
+            <div class="container text-container">
+                <div class="conclusiones-box">
+                    <h2 class="section-title" style="border:none; margin-bottom: 2rem;"><span style="color: var(--color-dark);">05.</span> Conclusiones</h2>
+                    <p>En conclusión, los hallazgos muestran que los agentes educativos basados en IA generativa pueden fortalecer el aprendizaje en educación superior siempre que su diseño responda a una <strong>lógica pedagógica clara, contextualizada y sistematizada</strong>. Su valor no radica únicamente en la automatización de respuestas, sino en su capacidad para ofrecer acompañamiento formativo, personalización e interacción significativa, siempre mediadas por decisiones didácticas bien fundamentadas. Asimismo, los resultados permiten sostener que la creación de estos agentes exige procesos rigurosos de diseño centrados en la alineación, la coherencia y la consistencia, ya que estos criterios favorecen respuestas pertinentes, lógicas y uniformes.</p>
+                    <p>Desde esta perspectiva, la sistematización de estas experiencias plantea oportunidades no solo para mejorar la calidad pedagógica y técnica de estos agentes en particular, sino que también contribuye al estado del arte de los GPT's personalizados con fines pedagógicos. Al identificar tanto los desafíos como las buenas prácticas en el desarrollo de los agentes, permite transmitir las buenas prácticas y garantizar una adopción ética y pedagógicamente sólida en instituciones de educación superior. De esta manera, contribuiría a mitigar riesgos éticos, como la desinformación y la deshonestidad académica, al tiempo que perfila un modelo de implementación de la inteligencia artificial basado en metodologías activas de aprendizaje.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- REFERENCIAS -->
+        <section class="referencias fade-in-up">
+            <div class="container text-container">
+                <h3 style="margin-bottom: 2rem; border-bottom: 2px solid var(--color-dark); display: inline-block; padding-bottom: 0.5rem; color: var(--color-dark); font-family: var(--font-sans); text-transform: uppercase; font-size: 1.25rem;">Referencias</h3>
+                <ul class="ref-list">
+                    <li>Al-Zahrani, A. M., & Alasmari, T. M. (2024). Exploring the impact of artificial intelligence on higher education: The dynamics of ethical, social, and educational implications. Humanities and Social Sciences Communications, 11(1), 1-12. <a href="https://doi.org/10.1057/s41599-024-02602-w" target="_blank" rel="noopener noreferrer">https://doi.org/10.1057/s41599-024-02602-w</a></li>
+                    <li>Chiu, T. K. F. (2023). The impact of Generative AI (GenAI) on practices of higher education: Challenges and opportunities. Computers and Education: Artificial Intelligence, 5, 100150. <a href="https://doi.org/10.1016/j.caeai.2023.100150" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/j.caeai.2023.100150</a></li>
+                    <li>Córdova-Esparza, D.-M. (2025). AI-Powered Educational Agents: Opportunities, Innovations, and Ethical Challenges. Information, 16(6), 469. <a href="https://doi.org/10.3390/info16060469" target="_blank" rel="noopener noreferrer">https://doi.org/10.3390/info16060469</a></li>
+                    <li>Huang, C & Willems, T. (2025). Empowering Educators in the Age of AI: An Empirical Study on Creating custom GPTs in Qualitative Research Method education. 10.48550/arXiv.2507.21074.</li>
+                    <li>Guettala, M., Bourekkache, S., Kazar, O., & Harous, S. (2024). Generative Artificial Intelligence in Education: Advancing Adaptive and Personalized Learning. Acta Informatica Pragensia, 13(3), 460-489. doi: 10.18267/j.aip.235</li>
+                    <li>K. Gold, S. Geng. (2024). Tracking the Evolution of Student Interactions With an LLM-Powered Tutor. LAK '24: Proceedings of the 14th Learning Analytics and Knowledge Conference. <a href="https://hdl.handle.net/2144/49844" target="_blank" rel="noopener noreferrer">https://hdl.handle.net/2144/49844</a></li>
+                    <li>Masalaci, Z; Shalawadi, S., and Papachristos, E. 2025. From ChatGPT to Custom GPTs: Scaffolding Conceptual Learning in Adult Education. In Proceedings of the 24th International Conference on Mobile and Ubiquitous Multimedia (MUM '25). Association for Computing Machinery, New York, NY, USA, 390–401. <a href="https://doi.org/10.1145/3771882.3771907" target="_blank" rel="noopener noreferrer">https://doi.org/10.1145/3771882.3771907</a></li>
+                    <li>Lin, T.-C., Shih, Y.-T., & Li, C.-H. (2026). Designing and Evaluating a 5E-Structured GenAI Coach for Guided Inquiry: A Pedagogy-to-Prompt Engineering Framework. Education Sciences, 16(3), 384. <a href="https://doi.org/10.3390/educsci16030384" target="_blank" rel="noopener noreferrer">https://doi.org/10.3390/educsci16030384</a></li>
+                    <li>Liu, J., & Ma, Q. (2025). Supporting low-proficiency L2 learners’ vocabulary learning with custom GPT-scaffolded corpus-based language pedagogy: a case study. Computer Assisted Language Learning, 1–37. <a href="https://doi.org/10.1080/09588221.2025.2539152" target="_blank" rel="noopener noreferrer">https://doi.org/10.1080/09588221.2025.2539152</a></li>
+                    <li>Li, H., Sun, L., & Kim, S. (2025). Effects of Customized Generative AI on Student Engagement and Emotions in Visual Communication Design Education: Implications for Sustainable Integration. Sustainability, 17(22), 9963. <a href="https://doi.org/10.3390/su17229963" target="_blank" rel="noopener noreferrer">https://doi.org/10.3390/su17229963</a></li>
+                    <li>Lo, C. K. (2023). What is the role of ChatGPT in education? A systematic review of promising applications and fatal harms. Computers and Education: Artificial Intelligence, 4, 100133. <a href="https://doi.org/10.1016/j.caeai.2023.100133" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/j.caeai.2023.100133</a></li>
+                    <li>López-Galisteo, A. J., & Borrás-Gené, O. (2025). The Creation and Evaluation of an AI Assistant (GPT) for Educational Experience Design. Information, 16(2), 117. <a href="https://doi.org/10.3390/info16020117" target="_blank" rel="noopener noreferrer">https://doi.org/10.3390/info16020117</a></li>
+                    <li>Nyaaba, M & Zhai, X. Developing a theory-grounded AI tool for the generation of culturally responsive lesson plans, Computers and Education: Artificial Intelligence, Volume 9, 2025, 100474. <a href="https://doi.org/10.1016/j.caeai.2025.100474" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/j.caeai.2025.100474</a></li>
+                    <li>Yusuf, H., Money, A., & Daylamani-Zad, D. (2025). Pedagogical AI conversational agents in higher education: a conceptual framework and survey of the state of the art. Educational technology research and development, 73, 815 - 874.</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer fade-in-up">
+        <div class="container">
+            <!-- Asumiendo que logo anahuac (1).png está en la misma carpeta -->
+            <img src="logo anahuac (1).png" alt="Universidad Anáhuac Logo" class="footer-logo">
+            <p class="footer-text">&copy; 2026 Universidad Anáhuac. Derechos de autor reservados.</p>
+            <p class="footer-text">Artículo de Investigación editado y maquetado digitalmente. Elia Padilla Aguillon, Marcos Sánchez Cerda, Josue Salvador Rodríguez Sánchez.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
